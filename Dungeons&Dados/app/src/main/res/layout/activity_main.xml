@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/id_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="Dungeons&amp;Dados"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="34dp"
+        android:text="Reset"
+        app:layout_constraintStart_toEndOf="@+id/id_total"
+        app:layout_constraintTop_toBottomOf="@+id/id_totalResultado" />
+
+    <TextView
+        android:id="@+id/id_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="37dp"
+        android:text="Total"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonReset"
+        app:layout_constraintStart_toStartOf="@+id/id_title" />
+
+    <TextView
+        android:id="@+id/id_totalResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="1dp"
+        android:text="0"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonReset"
+        app:layout_constraintTop_toBottomOf="@+id/id_title" />
+
+    <TextView
+        android:id="@+id/id_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Resultado"
+        app:layout_constraintEnd_toStartOf="@+id/id_resultadod4"
+        app:layout_constraintStart_toStartOf="@+id/id_resultadod4"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReset" />
+
+    <TextView
+        android:id="@+id/id_tiradas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="20dp"
+        android:text="Tiradas"
+        app:layout_constraintStart_toEndOf="@+id/buttonReset"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReset" />
+
+    <Button
+        android:id="@+id/id_d4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="11dp"
+        android:text="D4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_resultado" />
+
+    <Button
+        android:id="@+id/id_d6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="D6"
+        app:layout_constraintStart_toStartOf="@+id/id_d4"
+        app:layout_constraintTop_toBottomOf="@+id/id_d4" />
+
+    <Button
+        android:id="@+id/id_d8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="D8"
+        app:layout_constraintStart_toStartOf="@+id/id_d6"
+        app:layout_constraintTop_toBottomOf="@+id/id_d6" />
+
+    <Button
+        android:id="@+id/id_d10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="D10"
+        app:layout_constraintStart_toStartOf="@+id/id_d8"
+        app:layout_constraintTop_toBottomOf="@+id/id_d8" />
+
+    <Button
+        android:id="@+id/id_d12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="D12"
+        app:layout_constraintStart_toStartOf="@+id/id_d10"
+        app:layout_constraintTop_toBottomOf="@+id/id_d10" />
+
+    <Button
+        android:id="@+id/id_d20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="D20"
+        app:layout_constraintStart_toStartOf="@+id/id_d12"
+        app:layout_constraintTop_toBottomOf="@+id/id_d12" />
+
+    <Button
+        android:id="@+id/id_d100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="D100"
+        app:layout_constraintStart_toStartOf="@+id/id_d20"
+        app:layout_constraintTop_toBottomOf="@+id/id_d20" />
+
+    <TextView
+        android:id="@+id/id_resultadod4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="86dp"
+        android:text="-"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/id_title"
+        app:layout_constraintStart_toEndOf="@+id/id_d4"
+        app:layout_constraintTop_toBottomOf="@+id/id_resultado" />
+
+    <TextView
+        android:id="@+id/id_resultadod6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="-"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/id_resultadod4"
+        app:layout_constraintTop_toBottomOf="@+id/id_resultadod4" />
+
+    <TextView
+        android:id="@+id/id_resultadod8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="-"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/id_resultadod6"
+        app:layout_constraintTop_toBottomOf="@+id/id_resultadod6" />
+
+    <TextView
+        android:id="@+id/id_resultadod10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="-"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/id_resultadod8"
+        app:layout_constraintTop_toBottomOf="@+id/id_resultadod8" />
+
+    <TextView
+        android:id="@+id/id_resultadod12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="-"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/id_resultadod20"
+        app:layout_constraintStart_toStartOf="@+id/id_resultadod20" />
+
+    <TextView
+        android:id="@+id/id_resultadod20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="-"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/id_d20" />
+
+    <TextView
+        android:id="@+id/id_tiradasd4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="21dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/id_tiradas"
+        app:layout_constraintTop_toBottomOf="@+id/id_tiradas" />
+
+    <TextView
+        android:id="@+id/id_tiradasd6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/id_tiradasd4"
+        app:layout_constraintTop_toBottomOf="@+id/id_tiradasd4" />
+
+    <TextView
+        android:id="@+id/id_tiradasd8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/id_tiradasd6"
+        app:layout_constraintTop_toBottomOf="@+id/id_tiradasd6" />
+
+    <TextView
+        android:id="@+id/id_tiradasd10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/id_tiradasd8"
+        app:layout_constraintTop_toBottomOf="@+id/id_tiradasd8" />
+
+    <TextView
+        android:id="@+id/id_tiradasd12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/id_tiradasd10"
+        app:layout_constraintTop_toBottomOf="@+id/id_tiradasd10" />
+
+    <TextView
+        android:id="@+id/id_tiradasd20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/id_tiradasd12"
+        app:layout_constraintTop_toBottomOf="@+id/id_tiradasd12" />
+
+    <TextView
+        android:id="@+id/id_tiradasd100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/id_tiradasd20"
+        app:layout_constraintTop_toBottomOf="@+id/id_tiradasd20" />
+
+    <TextView
+        android:id="@+id/id_resultadod100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="36dp"
+        android:text="-"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/id_resultadod20"
+        app:layout_constraintTop_toBottomOf="@+id/id_resultadod20" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
